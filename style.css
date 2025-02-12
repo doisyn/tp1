@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .logo img {
@@ -54,10 +54,13 @@ nav ul {
     justify-content: center;
 }
 
+nav ul li {
+    padding: 10px 20px;
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
     display: block;
 }
 
@@ -69,6 +72,7 @@ nav ul li a {
     max-width: 1200px;
     box-sizing: border-box;
     height: auto;
+    padding: 0;
 }
 
 .corps .corps1 {
@@ -77,9 +81,10 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 300px;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
 }
 
 .corps .corps1 h2 {
@@ -103,16 +108,18 @@ nav ul li a {
     box-sizing: border-box;
     width: 75%;
     justify-content: space-around;
-    padding: 10px;
+    padding: 20px 0;
+    gap: 20px;
 }
 
 .corps3 .product {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-    width: 30%;
+    width: 22%;
     height: auto;
     justify-content: center;
     box-sizing: border-box;
@@ -123,15 +130,25 @@ nav ul li a {
     height: auto;
 }
 
+.corps3 .product h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.corps3 .product p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
 .corps3 .product button {
     background-color: #28a745;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .corps3 .product {
         width: 45%;
@@ -141,16 +158,21 @@ nav ul li a {
     }
     .corps3 {
         width: 100%;
+        gap: 15px;
+    }
+    .corps3 .product p {
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 768px) {
     .entete header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
     }
     .search-bar {
-        margin-top: 10px;
+        margin-top: 0;
     }
     .corps {
         flex-direction: column;
@@ -161,6 +183,18 @@ nav ul li a {
     }
     .corps3 .product {
         width: 100%;
+        flex-direction: column;
+    }
+    .corps3 .product h2 {
+        font-size: 1rem;
+    }
+    .corps3 .product p {
+        font-size: 0.8rem;
+    }
+    .corps3 .product button {
+        width: auto;
+    }
+    .corps3 {
+        gap: 10px;
     }
 }
-    
