@@ -178,6 +178,9 @@ nav ul li a {
         flex-direction: column;
         width: 100%;
     }
+    .corps .corps1 {
+        display: none;
+    }
     .corps .corps2 {
         width: 100%;
     }
