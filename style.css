@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+.entete{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.entete header{
+    width: 100%;
+    display: flex;
+    background-color: #37B08D;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cart img {
+    height: 30px;
+}
+
+.entete nav {
+    display: flex;
+    width: 100%;
+    background-color: #2E7D67;
+    justify-content: center;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+}
+
+.corps{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 80%;
+    flex-direction:row ;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.corps .corps1{
+    display: flex;
+    background-image: url(medias/images/network.jpg);
+    background-size:contain;
+    background-position: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.corps .corps1 h2{
+    color:white;
+}
+
+.corps .corps2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: lightcoral;
+    width: 20%;
+}
+
+
+.corps3 {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    justify-content: space-around;
+    padding-top: 10px;
+    
+}
+
+
+.corps3 .product {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    height: 300px;
+    justify-content: center;
+}
+
+
+.corps3 .product img {
+    width: 100%;
+    height: 100px;
+}
+
+.corps3 .product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
