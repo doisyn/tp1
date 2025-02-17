@@ -1,8 +1,13 @@
+:root {
+    font-family: Roboto;
+}
+
+*{margin:0;
+padding:0;}
+
 body {
     display: flex;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #D3D3D3;
     flex-direction: column;
     align-items: center;
@@ -13,15 +18,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height:120px;
 }
 
 .entete header {
     width: 100%;
+    height:80px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     background-color: #37B08D;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     flex-wrap: nowrap;
 }
 
@@ -42,37 +50,49 @@ body {
 .entete nav {
     display: flex;
     width: 100%;
+    height: 40px;
     background-color: #2E7D67;
+    align-items: center;
     justify-content: center;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: center;
+    width:80%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li {
-    padding: 10px 20px;
+    width:25%;
+    height: 100%;
+    display:flex;
+    align-items: center;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    display: block;
+    width:100%;
+    text-align: center;
+    
+
 }
+
+nav ul li:hover{
+    background-color: #44d5aa;
+}
+
 
 .corps {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
     box-sizing: border-box;
     height: auto;
-    padding: 0;
 }
 
 .corps .corps1 {
@@ -96,7 +116,7 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: lightcoral;
+    background-color: #c4ffed;
     width: 25%;
     padding: 10px;
     box-sizing: border-box;
@@ -153,7 +173,7 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #2E7D67;
+    background-color: #37b08d;
     color: white;
     padding: 30px 10px;
     width: 100%;
@@ -191,11 +211,11 @@ nav ul li a {
 }
 
 .piedpage ul li a:hover {
-    color: #37B08D;
+    color: #000000;
 }
 
 .piedpage .contact {
-    background-color: #37B08D;
+    background-color: #37b08d;
     color: white;
     border: none;
     padding: 10px 15px;
