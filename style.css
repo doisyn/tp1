@@ -149,6 +149,67 @@ nav ul li a {
     margin-top: 10px;
 }
 
+.piedpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #2E7D67;
+    color: white;
+    padding: 30px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.piedpage .section, .piedpage .section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    min-width: 200px;
+}
+
+.piedpage h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.piedpage ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.piedpage ul li {
+    margin-bottom: 10px;
+}
+
+.piedpage ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.piedpage ul li a:hover {
+    color: #37B08D;
+}
+
+.piedpage .contact {
+    background-color: #37B08D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.piedpage .contact:hover {
+    background-color: #1E5D4E;
+}
+
 @media (max-width: 1024px) {
     .corps3 .product {
         width: 45%;
@@ -200,4 +261,19 @@ nav ul li a {
     .corps3 {
         gap: 10px;
     }
+    .piedpage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .piedpage .section, .piedpage .section-contact {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .piedpage ul {
+        padding: 0;
+    }
 }
+
